@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Accreditation from './Components/Accreditation';
+import Footer from './Components/Footer';
+import Formcomponent from './Components/Formcomponents';
+import Midbuttons from './Components/Midbuttons';
+import Midcards from './Components/Midcards';
+import Navbar from './Components/Navbar';
+import PictureComponent from './Components/PictureComponent';
+import Pricebar from './Components/Pricebar';
+import Whychooseus from './Components/Whychooseus';
+import Womanimg from './Components/Womanimg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Formcomponent/>
+      <PictureComponent/>
+      <Pricebar/>
+      <Accreditation/>
+      <Midbuttons/>
+      <Midcards/>
+      <Whychooseus/>
+      <Womanimg/>
+      <Footer/>
     </div>
   );
 }
